@@ -10,7 +10,9 @@ public class App
     public static void main( String[] args )
     {
         System.out.println( "Hello World!" );
-        Student student = new Student(19, "qwerty", 1, 66);
+        StudentName studentName = new StudentName("Aryawn", "akshay", "Verdu");
+        Student student = new Student(23,studentName,33,2);
+        
         Configuration configuration = new Configuration().configure().addAnnotatedClass(Student.class);
         
         SessionFactory sessionFactory = configuration.buildSessionFactory();
